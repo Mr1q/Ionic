@@ -1,0 +1,31 @@
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-title>
+      Tab One
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- 头部 -->
+
+<ion-content>
+    <ion-button color="primary" [routerLink]="[ '/news']">跳转新闻  </ion-button>
+    <ion-button  color="success" [routerLink]="['/text1']">点我  </ion-button>
+    
+    <app-slide></app-slide>
+    <ion-button  color="primary" >sdsad</ion-button>
+    <ion-button  color="primary"  expand="block"> 开始 </ion-button>   <!--  expand 可以设置按钮的宽度 可以变宽 full直角  block圆角-->
+    <ion-button  color="primary"  expand="full"> 开始 </ion-button> 
+
+    <ion-button  color="primary"  expand="full" fill="outline"> 开始 </ion-button> 
+    <ion-button  color="primary" > 
+     <ion-icon name="add"></ion-icon>
+     </ion-button>
+
+     <ion-button color="primary" >
+       你好
+       <ion-icon name="add-circle-outline" slot="start"></ion-icon>
+       
+     </ion-button>
+
+     <ion-button color="success" [routerLink]="['/text2']"> toolbar界面 </ion-button>
+</ion-content>
